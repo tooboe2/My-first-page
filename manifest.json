@@ -1,0 +1,10 @@
+
+{
+  "manifest_version": 2,
+  "name": "Nova Guia Braba",
+  "version": "1.0.0",
+  "description": "Custom new tab startpage.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

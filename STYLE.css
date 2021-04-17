@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    background-color: rgba(32, 32, 32, .7);
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.barra li, input{
+    color: white;
+    width: 260px;
+    background-color: rgb(35, 39, 46);
+    padding: 11px 4px;
+    margin: 12px 0;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+}
+
+body {
+    background-image: url("Image-Background.jpg");
+    background-size: cover;
+    backdrop-filter: brightness(.8);
+}
+
+.barra h2{
+    color: white;
+    margin-top: 30px;
+}
+
+input {
+    border-style: none;
+}
+input:focus {
+    outline: 2px #2d2d2d;
+}
+
+li:hover {
+    background-color:rgb(30, 30, 50);
+    cursor: pointer;
+}
+
+.pesquisa-container { 
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pesquisar {
+    color: white;
+    height: auto;
+    width: 550px;
+    font-size: 'Poppins';
+    margin-top: 0%;
+    padding: 12px;
+}
+
+#data,#hora {
+    font-family: 'Poppins';
+    color:rgb(255, 255, 255);
+    font-size: 23px;
+    float: right;
+    text-shadow: 2px 1px black;
+}
+
+#hora {
+    float: left;
+}
+
+.pesquisa-container div {
+    width: 550px;
+}
+
+.scroll{
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.excluindo {
+    animation: excluir .22s ease-in; 
+}
+.adicionando {
+    animation: adicionar .18s ease-out; 
+}
+
+@keyframes adicionar {
+    from {
+        opacity: .7;
+        transform: scale(.5);
+    }
+    to {
+        opactiy: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes excluir {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opactiy: 0;
+        transform: scale(0);
+    }
+}
